@@ -1,0 +1,64 @@
+.sidebar-container {
+  width: 100px; /* Adjust based on desired width */
+  background-color: #f59e64; /* Sidebar background color */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed; /* Fix sidebar to the left */
+  top: 0; /* Adjusted */
+  left: 0;
+  padding: 0; /* Remove padding */
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Adjust for better spacing */
+}
+
+.menu-buttons {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center align the buttons vertically */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* Pushes the sign out button to the bottom */
+}
+
+.btn-body {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the buttons */
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+  width: 100%; /* Ensure buttons take full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove margin */
+}
+
+.btn-body:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-body.active {
+  background-color: #ddd;
+}
+
+.btn-icon {
+  margin-right: 0; /* Remove right margin */
+}

@@ -1,0 +1,40 @@
+.main-body {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar-container {
+    width: 100px; /* Adjust based on desired width */
+    background-color: #f59e64; /* Sidebar background color */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed; /* Fix sidebar to the left */
+    top: 0;
+    left: 0;
+  }
+
+  .content {
+    flex-grow: 1;
+    margin-left: 100px; /* Adjust based on sidebar width */
+    padding: 20px;
+    background-color: #1E2A3E; /* Ensure consistent background color */
+    border-radius: 30px;
+    height: calc(100% - 60px); /* Adjust based on header height */
+  }
+  
+  .another-screen-container {
+    width: calc(100% - 100px);
+    height: 97.5%;
+    background-color: #1E2A3E;
+    border-radius: 30px;
+    margin-top: 60px;
+  }
+  .routes-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #1E2A3E; /* Adjust as needed */
+}
+  

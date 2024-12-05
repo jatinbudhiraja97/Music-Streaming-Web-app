@@ -1,0 +1,80 @@
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.add-song-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 950px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-song-container h2 {
+    margin-bottom: 10px;
+    color: #ff5722;
+}
+
+.add-song-container form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.add-song-container input,
+.add-song-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+.add-song-container input[type="file"] {
+    grid-column: span 2;
+    padding: 5px;
+}
+
+.add-song-container button {
+    grid-column: span 1;
+    background-color: #ff5722;
+    cursor: pointer;
+}
+
+.library-body,
+.songs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.song-card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.song-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.song-card p {
+    margin: 0 0 5px 0;
+}
+
+.song-card audio {
+    width: 100%;
+    margin-top: 10px;
+}

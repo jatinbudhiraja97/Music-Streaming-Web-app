@@ -1,0 +1,84 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    height: 100%;
+}
+
+.favorites-container {
+    background: url('../images/music.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.favorite-card {
+    background-color: rgba(30, 30, 30, 0.8); /* Increased transparency */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Increased width */
+    height: 400px; /* Set height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+    position: relative; /* To position the dropdown */
+    background: url('../images/background_image.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced out */
+}
+
+.favorite-card:hover {
+    transform: scale(1.05);
+}
+
+.favorite-card h3 {
+    margin: 10px 0;
+}
+
+.favorite-card p {
+    margin: 5px 0;
+}
+
+.favorite-card audio {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+.three-dots {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px; /* Reduced padding */
+    border-radius: 5px;
+    top: 30px; /* Adjusted to move it down slightly */
+    right: 10px;
+    z-index: 1;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px; /* Reduced font size */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
