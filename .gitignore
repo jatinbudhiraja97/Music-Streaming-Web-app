@@ -1,0 +1,14 @@
+# Ignore Node.js dependencies
+frontend/node_modules/
+
+# Ignore build files
+frontend/build/
+
+# Ignore Python virtual environment
+backend/myenv/
+
+# Ignore uploaded files
+backend/uploads/
+
+# Ignore environment variables
+.env
